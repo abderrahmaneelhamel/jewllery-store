@@ -147,74 +147,29 @@
         </h2>
       </div>
       <div class="price_container">
+          <?php 
+          require "../autoloader.php";
+          
+          $prod = new product;
+          $resultat=$prod->list();
+          while($row = mysqli_fetch_assoc($resultat)){
+          $id=$row["id-product"];
+        ?>
         <div class="box">
           <div class="name">
-            <h6>
-              Diamond Ring
-            </h6>
+            <h6><?php echo $row["label"];?></h6>
           </div>
-          <div class="img-box">
-            <img src="images/p-1.png" alt="">
-          </div>
+          <div class="img-box"><img src="<?php echo $row["img"] ?>" alt="img"></div>
           <div class="detail-box">
-            <h5>
-              $<span>1000.00</span>
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
+            <h5><span><?php echo $row["price"] ?></span>$</h5>
+            <button class="btn btn-outline-warning" onclick="buy(<?php echo $row['id-product'] ?>)">Buy Now</button>
           </div>
         </div>
-        <div class="box">
-          <div class="name">
-            <h6>
-              Diamond Ring
-            </h6>
-          </div>
-          <div class="img-box">
-            <img src="images/i-2.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              $<span>1000.00</span>
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="name">
-            <h6>
-              Diamond Ring
-            </h6>
-          </div>
-          <div class="img-box">
-            <img src="images/i-3.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              $<span>1000.00</span>
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex justify-content-center">
-        <a href="" class="price_btn">
-          See More
-        </a>
-      </div>
+        <?php 
+          }
+        ?>
     </div>
   </section>
-
-  <!-- end price section -->
-
-
-
-
 
   <!-- info section -->
   <section class="info_section ">

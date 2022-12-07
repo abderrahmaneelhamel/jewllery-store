@@ -26,21 +26,19 @@
                     style="width: 60px;" alt="logo">
                   <h4 class="mt-1 mb-5 pb-1">We are Luxury Gems</h4>
                 </div>
-                <form method="post" action="">
-                  <p>Login to your account</p>
+                <form method="post" action="../Controllers/signupController.php">
                   <div class="form-outline mb-4">
-                    <input type="email" id="form2Example11" class="form-control"
-                      placeholder="Phone number or email address" />
+                    <label>enter your Email</label>
+                    <input type="email" id="form2Example11" class="form-control" name="user_email" placeholder="Email address" />
                   </div>
                   <div class="form-outline mb-4">
-                    <input type="password" id="form2Example22" class="form-control" placeholder="password"  />
+                  <label>enter your Password</label>
+                    <input type="password" id="form2Example22" class="form-control" name="user_password" placeholder="new password"  />
                   </div>
                   <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Login</button>
+                    <input class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" name="submit" type="submit" value="Sign up">
                   </div>
                   <div class="d-flex align-items-center justify-content-center pb-4">
-                    <p class="mb-0 me-2">Don't have an account?</p>
-                    <a style="margin-left: 10px; " href="signup.php" class="btn btn-outline-warning">Create new</a>
                   </div>
                 </form>
               </div>
