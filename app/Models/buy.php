@@ -2,7 +2,6 @@
 
     require("../../autoloader.php");
 
-
 class buy {
     function buy() {
         $id = $_POST["id"];

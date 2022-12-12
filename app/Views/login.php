@@ -26,7 +26,7 @@
                     style="width: 60px;" alt="logo">
                   <h4 class="mt-1 mb-5 pb-1">We are Luxury Gems</h4>
                 </div>
-                <form method="post" action="../app/Controllers/loginController.php">
+                <form method="post">
                   <p>Login to your account</p>
                   <div class="form-outline mb-4">
                     <input type="email" id="form2Example11" class="form-control" name="user_email" placeholder="Phone number or email address" />

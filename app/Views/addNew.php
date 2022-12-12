@@ -15,36 +15,28 @@
 </head>
 
 <body style="background-color:white ;">
-    <nav>
-        <div>
-            <ul>
-                <li><a href="#" style="color:rgba(248, 181, 58, 1) ;text-decoration: none;">GESTIONNE PAGE</a></li>
-            </ul>
-
-        </div>
-           </nav>
     <div class="container">
         <div class="text-center mb-4">
             <h3 class="log2" style="color:rgba(248, 181, 58, 1) ;">ADD NEW PRODUCT</h3>
         </div>
         <div class="container d-flex justify-content-center">
-            <form action="../Controllers/addNewController.php" method="post" style="width:50vw; min-width:300px ;" enctype="multipart/form-data">
+            <form method="post" style="width:50vw; min-width:300px ;" enctype="multipart/form-data">
                 <div class="row">
                     <div class="row">
                         <label style="color:rgba(248, 181, 58, 1) ;" class="log">Product Name</label>
-                        <input type="text" class="form-control" name="name" placeholder="name">
+                        <input type="text" class="form-control" name="name" placeholder="name" required>
                     </div>
                     <div class="row">
                         <label class="log" style="color:rgba(248, 181, 58, 1) ;">quantity</label>
-                        <input type="text" class="form-control" name="qte" placeholder="quantity">
+                        <input type="text" class="form-control" name="qte" placeholder="quantity" required>
                     </div>
                     <div class="row">
                         <label class="log" style="color:rgba(248, 181, 58, 1) ;">Product Price</label>
-                        <input type="text" class="form-control" name="price" placeholder="Price">
+                        <input type="text" class="form-control" name="price" placeholder="Price" required>
                     </div>
                     <div class="row">
                         <label class="log" style="color:rgba(248, 181, 58, 1) ;">Images</label>
-                        <input type="file" class="form-control" name="image" placeholder="Price">
+                        <input type="file" class="form-control" name="image" placeholder="Price" required>
                     </div>
                     
                     <div class="row">
@@ -60,13 +52,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col" style="margin-top: 20px; margin-left:210px;">
-                    <div class="sub">
-                    <button  type="submit" class="btn btn-outline-warning mb-4" name="submit">Save</button>
-                    <a href="../../public/dachBoard" class="btn btn-outline-dark mb-4">Cancel</a>
+            <div style="margin-top: 20px; margin-left:224px;">
+                    <input  type="submit" class="btn btn-outline-warning mb-4" name="submit" value="Save">
+                    <a href="dachBoard" class="btn btn-outline-dark mb-4">Cancel</a>
             </div>
             </form>
-            <a href="../../public/dachBoard" class="btn btn-outline-warning mb-4">return</a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

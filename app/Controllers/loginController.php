@@ -1,7 +1,5 @@
 <?php
 
-require("../../autoloader.php");
-
 class loginController {
     function loginController(){
         if(isset($_POST['submit'])){
@@ -20,5 +18,3 @@ class loginController {
         }     
     }
 }
-$login = new loginController;
-$login->loginController();

@@ -35,7 +35,7 @@
          $row = mysqli_fetch_assoc($resultat);
         ?>
         <div class="container d-flex justify-content-center">
-            <form action="../Controllers/editController.php? id-product=<?php echo $row['id-product'] ?>" method="post" style="width:50vw; min-width:300px ;" enctype="multipart/form-data">
+            <form method="post" style="width:50vw; min-width:300px ;" enctype="multipart/form-data">
                 <div class="row">
                     <div class="row">
                         <label style="color:rgba(248, 181, 58, 1) ;" class="log">Product Name</label>
@@ -65,10 +65,10 @@
                 </div>
                 
             </div>
-            <div class="col" style="margin-top: 20px; margin-left:230px;">
+            <div class="col" style="margin-top: 20px; margin-left:210px;">
                     <div class="sub">
                     <input  type="submit" class="btn btn-outline-warning mb-4" name="submit" value="Update">
-                    <a href="../../public/dachBoard" class="btn btn-outline-dark mb-4">Cancel</a>
+                    <a href="dachBoard" class="btn btn-outline-dark mb-4">Cancel</a>
             </div>
             </form>
         </div>

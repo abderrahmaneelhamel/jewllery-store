@@ -1,7 +1,5 @@
 <?php
 
-require("../../autoloader.php");
-
 class signupcontrol {
     function signupcontrol(){
         if(isset($_POST['submit'])){
@@ -12,5 +10,3 @@ class signupcontrol {
         }
     }
 }
-$sign = new signupcontrol;
-$sign->signupcontrol();

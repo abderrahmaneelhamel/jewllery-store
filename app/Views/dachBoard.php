@@ -16,7 +16,7 @@
 </head>
 <body>
 <nav style="background-color:black; display:flex; justify-content:flex-end; margin-bottom: 10px;">
-      <a style="background-color: rgba(248, 181, 58, 1) ; color:white; margin:5px; margin-right:30px; width:120px;" href="../app/Controllers/disconnect.php" class="disconnect">disconnect</a>
+      <a style="background-color: rgba(248, 181, 58, 1) ; color:white; margin:5px; margin-right:30px; width:120px;" href="disconnect" class="disconnect">disconnect</a>
 </nav>
 <div>
     <?php
@@ -28,7 +28,7 @@
       </div>';
      }
    ?>
-    <a href="../app/Controllers/addNewController.php" class="btn btn-outline-warning mb-3">ADD PRODUCT</a>
+    <a href="addNew" class="btn btn-outline-warning mb-3">ADD PRODUCT</a>
     
 </div>
 <table class="table table-light table-striped table-hover text-center">
@@ -50,9 +50,9 @@
 
 ?>
 <tr><td>
-        <a href="../app/Controllers/editController.php? id-product=<?php echo $row['id-product'] ?>" class="link-warning"><i class="fa-solid fa-pen-to-square fs-6 me-3"></i></a>
+        <a href="editpage?id-product=<?php echo $row['id-product'] ?>" class="link-warning"><i class="fa-solid fa-pen-to-square fs-6 me-3"></i></a>
       
-        <a href="../app/Models/delete.php? id-product=<?php echo $row['id-product'] ?>" class="link-warning"><i class="fa-solid fa-trash fs-6 me-3"></i></a>
+        <a href="delete?id-product=<?php echo $row['id-product'] ?>" class="link-warning"><i class="fa-solid fa-trash fs-6 me-3"></i></a>
       </td>
       
       <td><?php echo $row['id-product'] ?></td>

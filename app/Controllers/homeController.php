@@ -7,6 +7,9 @@ class HomeController{
         require "../autoloader.php";
     }
     public function index($page){
+        if($_SESSION['user']==null){
+            header("location: login");
+        }
         include('../app/Views/'.$page.'.php');
     }
     public function jewellery($page){
@@ -33,6 +36,51 @@ class HomeController{
         $test = new dh;
         $resultat = $test->dh();
         include('../app/Views/'.$page.'.php');
+    }
+    public function addNew(){
+        if($_SESSION['admin']==null){
+            header("location: login");
+        }
+        require("addNewController.php");
+        $cat = new edit;
+        $ret=$cat->category();
+        require("../app/Views/addNew.php");
+        $test = new addNewController;
+        $test->addNewController();
+    }
+    public function edit($ID){
+        if($_SESSION['admin']==null){
+            header("location: login");
+        }
+        require("editController.php");
+        $list = new edit;
+        $resultat=$list->list($ID);
+        $cat = new edit;
+        $ret=$cat->category();
+        require("../app/Views/editpage.php");
+        $test = new editController;
+        $test->editController($ID);
+    }
+    function delete($ID){
+        $del= new delete;
+        $del->delete($ID);
+    }
+    function signup(){
+        require("signupController.php");
+        require("../app/Views/signuppage.php");
+        $sign = new signupcontrol;
+        $sign->signupcontrol();
+    }
+    function login(){
+        require("loginController.php");
+        require("../app/Views/login.php");
+        $login = new loginController;
+        $login->loginController();
+    }
+    function disconnect(){
+        require("disconnect.php");
+        $dis = new disconnect;
+        $dis->disconnect();
     }
 }
 ?>

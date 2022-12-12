@@ -11,9 +11,9 @@ class login {
         if(isset($row)){
         $name = str_replace("@gmail.com","",$email);
         $_SESSION['admin'] = $name;
-        header("Location: ../../public/dachBoard");
+        header("Location: dachBoard");
         }else{
-        echo '<div class="user">incorrect</div>';
+            header("location:login");            
         }            
     }
     function loginUser($email,$password){
@@ -27,9 +27,9 @@ class login {
         $name = str_replace("@gmail.com","",$email);
         $_SESSION['user'] = $name;
         $_SESSION['id'] = $row["id"];
-        header("Location: ../../public/home");
+        header("Location: home");
         }else{
-            header("location:../../public/login");            
+            header("location:login");            
         }
         }
         }

@@ -33,7 +33,7 @@
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="home">
             <img src="../app/Views/images/logo.png" alt="">
             <span>
               Luxury Gems
@@ -50,7 +50,7 @@
                   <a class="nav-link text-dark" href="home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-dark" href="about"> About</a>
+                  <a class="nav-link" href="about"> About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="jewellery">Jewellery </a>
@@ -62,7 +62,7 @@
                 <div class="nav-link"><?php echo $_SESSION['user']?></div>
                 </li>
                 <li class="nav-item">
-                  <a href="../app/Controllers/disconnect.php" class="disconnect">disconnect</a>
+                  <a href="disconnect" class="disconnect">disconnect</a>
                 </li>
               </ul>
               
@@ -128,7 +128,7 @@
                       aptent taciti sociosqu ad litora torquent per conubia nostra
                     </p>
                     <div>
-                      <a href="">Shop Now</a>
+                      <a href="jewellery">Shop Now</a>
                     </div>
                   </div>
                 </div>
@@ -182,7 +182,7 @@
                       aptent taciti sociosqu ad litora torquent per conubia nostra
                     </p>
                     <div>
-                      <a href="">Shop Now</a>
+                      <a href="jewellery">Shop Now</a>
                     </div>
                   </div>
                 </div>
@@ -279,7 +279,7 @@
               veniam, quis nostrud
             </p>
             <div>
-              <a href="">
+              <a href="about">
                 Read More
               </a>
             </div>
@@ -317,9 +317,9 @@
           </div>
           <div class="detail-box">
             <h5>
-              $<span>1000.00</span>
+              $<span>300.00</span>
             </h5>
-            <a href="">
+            <a href="jewellery">
               Buy Now
             </a>
           </div>
@@ -335,9 +335,9 @@
           </div>
           <div class="detail-box">
             <h5>
-              $<span>1000.00</span>
+              $<span>440.00</span>
             </h5>
-            <a href="">
+            <a href="jewellery">
               Buy Now
             </a>
           </div>
@@ -353,16 +353,16 @@
           </div>
           <div class="detail-box">
             <h5>
-              $<span>1000.00</span>
+              $<span>250.00</span>
             </h5>
-            <a href="">
+            <a href="jewellery">
               Buy Now
             </a>
           </div>
         </div>
       </div>
       <div class="d-flex justify-content-center">
-        <a href="" class="price_btn">
+        <a href="jewellery" class="price_btn">
           See More
         </a>
       </div>
@@ -388,7 +388,7 @@
               <h2>
                 Wedding Ring
               </h2>
-              <a href="">
+              <a href="jewellery">
                 Buy Now
               </a>
             </div>

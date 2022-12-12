@@ -10,8 +10,8 @@ class signup {
            echo "error";
            }else{
            mysqli_query($conn,"INSERT INTO `users` (`email`, `password`) VALUES ('$email','$password')");
-           header("Location: ../../public/login");
+           header("Location: login");
            }
-          }
+    }
     
 }
