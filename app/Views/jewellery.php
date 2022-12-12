@@ -47,7 +47,6 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
@@ -87,6 +86,8 @@
         </div>
   </div>
   <!-- item section -->
+  <div class="bascket">The total : <span style="color:white ;" id="total0"></span><a class="button" href="" onclick="order()">Confirm</a><img src="../app/Views/images/picnic-basket.png" alt="bascket" id="bascket0" onclick="display0()"></div>
+  <img src="../app/Views/images/picnic-basket.png" alt="bascket" id="bascket" onclick="display()">
 
   <div class="item_section layout_padding2">
     <div class="container">

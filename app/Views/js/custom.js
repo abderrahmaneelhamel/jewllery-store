@@ -30,6 +30,8 @@ function buy(i) {
       count++;
       var t = document.getElementById("total");
       t.innerText = total + "$";
+      var t0 = document.getElementById("total0");
+      t0.innerText = total + "$";
       var n = document.getElementById("cart_number");
       n.innerHTML = count;
     } else if (result1 == "not enough qtyy") {
@@ -49,6 +51,8 @@ function deleting(i){
        count--;
        var t = document.getElementById("total");
        t.innerText = total + "$";
+       var t0 = document.getElementById("total0");
+       t0.innerText = total + "$";
        var n = document.getElementById("cart_number");
        n.innerHTML = count;
     }
@@ -79,6 +83,18 @@ function deleting(i){
      alert(" You didn't buy anything\n buy something before confirming");
    }
  }
+ function display(){
+  var b = document.querySelector(".bascket"); 
+  b.style.display = "flex";
+  var c = document.querySelector("#bascket");
+  c.style.display = "none";
+}
+function display0(){
+  var b = document.querySelector(".bascket"); 
+  b.style.display = "none";
+  var c = document.querySelector("#bascket");
+  c.style.display = "grid";
+}
 
 // to get current year
 function getYear() {
