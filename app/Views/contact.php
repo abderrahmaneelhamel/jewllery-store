@@ -29,13 +29,13 @@
 </head>
 
 <body class="sub_page">
-<div class="fixed-top">
+<div style="background-color:white ;" class="fixed-top">
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="home">
             <img src="../app/Views/images/logo.png" alt="">
             <span>
               Luxury Gems
@@ -110,7 +110,7 @@
         <div class="col-md-6">
           <div class="map_container">
             <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.6998908787173!2d-9.237275085737073!3d32.29304571581311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYouCode%20Safi!5e0!3m2!1sfr!2sma!4v1668456590795!5m2!1sfr!2sma" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@
         <div class="row">
           <div class="col-md-3">
             <div class="info_logo">
-              <a href="">
+              <a href="home">
                 <img src="../app/Views/images/logo.png" alt="">
                 <span>
                 Luxury Gems

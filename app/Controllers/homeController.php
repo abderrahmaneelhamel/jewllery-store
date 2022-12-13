@@ -6,9 +6,19 @@ class HomeController{
         session_start();
         require "../autoloader.php";
     }
+    public function index0($page){
+        if($_SESSION['admin']==null){
+            header("location: login");
+        }
+        header("location:dachBoard");
+    }
     public function index($page){
         if($_SESSION['user']==null){
-            header("location: login");
+            if(isset($_SESSION['admin'])){
+                header("location: dachBoard");
+            }else{
+                header("location: login");
+            }
         }
         include('../app/Views/'.$page.'.php');
     }
@@ -73,6 +83,11 @@ class HomeController{
     }
     function login(){
         require("loginController.php");
+        if((isset($_SESSION['admin'])) OR (isset($_SESSION['user']))){
+            require("disconnect.php");
+            $dis = new disconnect;
+            $dis->disconnect();
+        }
         require("../app/Views/login.php");
         $login = new loginController;
         $login->loginController();

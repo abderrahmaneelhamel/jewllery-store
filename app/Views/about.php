@@ -29,7 +29,7 @@
 </head>
 
 <body class="sub_page">
-<div class="fixed-top">
+<div style="background-color:white ;" class="fixed-top">
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -119,7 +119,7 @@
         <div class="row">
           <div class="col-md-3">
             <div class="info_logo">
-              <a href="">
+              <a href="home">
                 <img src="../app/Views/images/logo.png" alt="">
                 <span>
                   Luxury Gems

@@ -33,7 +33,7 @@
 
 <body class="sub_page">
 <div class="fixed-top">
-  <div class="hero_area">
+  <div class="hero_area" style="background-color:white ;">
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
@@ -180,7 +180,7 @@
         <div class="row">
           <div class="col-md-3">
             <div class="info_logo">
-              <a href="">
+              <a href="home">
                 <img src="../app/Views/images/logo.png" alt="">
                 <span>
                   Luxury Gems

@@ -19,6 +19,10 @@ if(isset($_GET['page'])){
         $home->login();
     }elseif($_GET['page']==="addNew"){
         $home->addNew();
+    }elseif($_GET['page']==="editpage" && strlen($_SERVER['REQUEST_URI']) == 27){
+        header('location: dachBoard');
+    }elseif($_GET['page']==="delete" && strlen($_SERVER['REQUEST_URI']) == 25){
+        header('location: dachBoard');
     }elseif(strpos($_GET['page'], $str1) !== false){
         if(isset( $_SERVER['REQUEST_URI'][39]) && isset($_SERVER['REQUEST_URI'][40])){
             $ID = $_SERVER['REQUEST_URI'][39].$_SERVER['REQUEST_URI'][40];
@@ -40,11 +44,9 @@ if(isset($_GET['page'])){
         $page = $_GET['page'];
         $home->index($page);
     }else{
-        header("location:dachBoard");
-        $home->index('dachBoard');
+        $home->index0('dachBoard');
     }
 }else{
-    header("location:dachBoard");
-    $home->index('dachBoard');
+    $home->index0('dachBoard');
 }
 ?>
