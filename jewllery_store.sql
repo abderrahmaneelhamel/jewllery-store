@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 06 déc. 2022 à 11:58
+-- Généré le : mar. 13 déc. 2022 à 17:02
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.1.10
 
@@ -82,8 +82,11 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id-product`, `label`, `img`, `quantity`, `price`, `id-category`) VALUES
-(1, 'diamond ring', '', 9, 440, 2),
-(2, 'diamond earings', '', 14, 250, 4);
+(1, 'diamond ring', 'uploads/i-2.png', 2, 440, 2),
+(2, 'diamond earings', 'uploads/i-3.png', 16, 250, 4),
+(3, 'Golden Ring', 'uploads/i-1.png', 20, 255, 2),
+(4, 'Double Diamond Ring', 'uploads/i-4.png', 15, 300, 2),
+(5, 'Diamond necklace', 'uploads/toppng.com-diamond-necklace-jewelry-png-2000x2000.png', 16, 200, 1);
 
 -- --------------------------------------------------------
 
@@ -102,9 +105,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`) VALUES
-(1, 'abderrahmane@gmail.com', '1a1dc91c907325c69271ddf0c944bc72'),
-(2, 'abdoelhamel@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99'),
-(3, 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3');
+(12, 'abdoelhamel@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99'),
+(15, 'abderrahmane@gmail.com', '1a1dc91c907325c69271ddf0c944bc72');
 
 --
 -- Index pour les tables déchargées
@@ -156,13 +158,13 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT pour la table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id-product` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id-product` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- Contraintes pour les tables déchargées
