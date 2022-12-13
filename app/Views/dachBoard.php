@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<nav style="background-color:black; display:flex; justify-content:flex-end; margin-bottom: 10px;">
+<nav style="background-color:black; display:flex; justify-content:space-between; margin-bottom: 10px; padding-left:25%;" class="navbar navbar-expand-lg bg-dark">
+      <form style="width: 65%;" class="d-flex" role="search" method="POST">
+        <input class="form-control me-3" name="search" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
       <a style="background-color: rgba(248, 181, 58, 1) ; color:white; margin:5px; margin-right:30px; width:120px;" href="disconnect" class="disconnect">disconnect</a>
 </nav>
 <div>

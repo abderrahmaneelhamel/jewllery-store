@@ -14,4 +14,11 @@ class dh {
         $ret = mysqli_query($conn, "SELECT * FROM `category` WHERE `id`= $cat");
         return $ret;
     }
+    function search($name){
+        $test = new connection;
+        $conn = $test->connection();
+        $sql="SELECT * FROM `products` WHERE `label`='$name'";
+        $resultat = mysqli_query($conn,$sql);
+        return $resultat;
+    }
 }

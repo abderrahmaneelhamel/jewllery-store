@@ -45,6 +45,14 @@ class HomeController{
         require("../app/Models/dh.php");
         $test = new dh;
         $resultat = $test->dh();
+        if(isset($_POST['search'])){
+            $name = $_POST['search'];
+            if($name===""){
+                header("location: dachBoard");
+            }else{
+                $resultat = $test->search($name);
+            }
+        }
         include('../app/Views/'.$page.'.php');
     }
     public function addNew(){
