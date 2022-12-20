@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP CRUD APP</title>
+    <link rel="shortcut icon" href="../app/Views/images/logo.png" type="image/x-icon">
+    <title>Luxury Gems</title>
     <!-- CSS only -->
 
     <link rel="stylesheet" href="../app/Views/css/bootstrap.css">
-    <link rel="stylesheet" href="../app/Views/style.css">
+    <link rel="stylesheet" href="../app/Views/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
     <script src="../app/Views/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
@@ -65,7 +66,7 @@
                 </div>
                 
             </div>
-            <div class="col" style="margin-top: 20px; margin-left:210px;">
+            <div class="col ret">
                     <div class="sub">
                     <input  type="submit" class="btn btn-outline-warning mb-4" name="submit" value="Update">
                     <a href="dachBoard" class="btn btn-outline-dark mb-4">Cancel</a>

@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playtech</title>
+    <link rel="shortcut icon" href="../app/Views/images/logo.png" type="image/x-icon">
+    <title>Luxury Gems</title>
     <link rel="stylesheet" href="../app/Views/css/bootstrap.css">
-    <link rel="stylesheet" href="../app/Views/style.css">
+    <link rel="stylesheet" href="../app/Views/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="../app/Views/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -36,7 +37,7 @@
                     </div>
                     <div class="row">
                         <label class="log" style="color:rgba(248, 181, 58, 1) ;">Images</label>
-                        <input type="file" class="form-control" name="image" placeholder="Price" required>
+                        <input type="file" class="form-control" name="image" placeholder="image" required>
                     </div>
                     
                     <div class="row">
@@ -52,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div style="margin-top: 20px; margin-left:224px;">
+            <div class="ter">
                     <input  type="submit" class="btn btn-outline-warning mb-4" name="submit" value="Save">
                     <a href="dachBoard" class="btn btn-outline-dark mb-4">Cancel</a>
             </div>

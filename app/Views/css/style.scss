@@ -541,7 +541,6 @@ a:focus {
         color: #fbb534;
       }
 
-      h2 {}
 
       a {
         display: inline-block;
@@ -713,7 +712,7 @@ a:focus {
     color: #fff;
     background: linear-gradient(to bottom, #f5e47b, #fb930a);
     margin-top: 35px;
-
+    cursor: pointer;
 
   }
 
@@ -828,7 +827,7 @@ a:focus {
         background: linear-gradient(to bottom, #f5e47b, #fb930a);
         margin-top: 35px;
         text-transform: uppercase;
-
+        cursor: pointer;
       }
     }
   }

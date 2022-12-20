@@ -102,6 +102,7 @@ body {
   background-color: rgb(0, 0, 0);
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 .username {
   position: relative;
@@ -1065,11 +1066,32 @@ a:focus {
 .footer_section a {
   color: #9c9b9b;
 }
+.ret{
+  margin-top: 20px;
+  margin-left:210px;
+  width: 50%;
+}
+.ter{
+  margin-top: 20px;
+  margin-left:224px;
+}
 /*# sourceMappingURL=style.css.map */
 @media only screen and (max-width: 400px){
   .ul{
     width: 190px;
     display: grid; 
+  }
+  .res{
+    width: 432px;
+  }
+  .ret{
+    margin-top: 25px;
+    margin-left:-9px;
+    width: 100%;
+  }
+  .ter{
+    margin-top: 20px;
+    margin-left:5px;
   }
   .disconnect {
     position: relative;
@@ -1142,5 +1164,6 @@ a:focus {
     justify-content: center;
     background-color: rgba(248, 181, 58, 1);
     color: azure;
+    cursor: pointer;
   }
 }

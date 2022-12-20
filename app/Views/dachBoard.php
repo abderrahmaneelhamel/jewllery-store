@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playtech</title>
+    <link rel="shortcut icon" href="../app/Views/images/logo.png" type="image/x-icon">
+    <title>Luxury Gems</title>
     <link rel="stylesheet" href="../app/Views/css/bootstrap.css">
 
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<nav style="background-color:black; display:flex; justify-content:space-between; margin-bottom: 10px; padding-left:25%;" class="navbar navbar-expand-lg bg-dark">
+<nav style="background-color:black; display:flex; justify-content:space-between; margin-bottom: 10px; padding-left:25%;" class="res navbar navbar-expand-lg bg-dark">
       <form style="width: 65%;" class="d-flex" role="search" method="POST">
         <input class="form-control me-3" name="search" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-light" type="submit">Search</button>
@@ -23,15 +24,6 @@
       <a style="background-color: rgba(248, 181, 58, 1) ; color:white; margin:5px; margin-right:30px; width:120px;" href="disconnect" class="disconnect">disconnect</a>
 </nav>
 <div>
-    <?php
-     if (isset($_GET['msg'])) {
-        $msg=$_GET['msg'];
-        echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-        '.$msg.'
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>';
-     }
-   ?>
     <a href="addNew" class="btn btn-outline-warning mb-3">ADD PRODUCT</a>
     
 </div>

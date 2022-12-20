@@ -1,3 +1,7 @@
 <?php
-header("location: public/login");
+if(isset($_GET['page'])){
+    header("location: public/login");
+}else{
+    header("location: public/login");
+}
 ?>

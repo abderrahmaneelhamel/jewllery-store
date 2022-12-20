@@ -17,7 +17,7 @@ class dh {
     function search($name){
         $test = new connection;
         $conn = $test->connection();
-        $sql="SELECT * FROM `products` WHERE `label`='$name'";
+        $sql = "SELECT * from products WHERE label LIKE '%".$name."%'";
         $resultat = mysqli_query($conn,$sql);
         return $resultat;
     }

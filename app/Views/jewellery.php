@@ -8,11 +8,12 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="Description" content="Jewellery store for selling Jewellery like rings and necklaces">
+  <meta name="Keyword" content="Jewellery store,rings,necklaces">
+  <meta name="author" content="Jewellery store">
+  <link rel="shortcut icon" href="../app/Views/images/logo.png" type="image/x-icon">
 
-  <title>Lodge</title>
+  <title>Luxury Gems</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />

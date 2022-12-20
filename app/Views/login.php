@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../app/Views/images/logo.png" type="image/x-icon">
+    <title>Luxury Gems</title>
+    <meta name="Description" content="Jewellery store for selling Jewellery like rings and necklaces">
+    <meta name="Keyword" content="Jewellery store,rings,necklaces">
+    <meta name="author" content="Jewellery store">
     <link rel="stylesheet" type="text/css" href="../app/Views/css/bootstrap.css" />
     <link href="../app/Views/css/style.css" rel="stylesheet" />
     <link href="../app/Views/css/responsive.css" rel="stylesheet" />
@@ -14,7 +18,7 @@
 </head>
 <body>
 <section class="h-100 gradient-form" style="background-color: #eee;">
-  <div class="container py-5 h-100">
+  <div style="padding-top: 0rem !important;" class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-xl-10">
         <div class="card rounded-3 text-black">
