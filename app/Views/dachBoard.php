@@ -55,16 +55,7 @@
       <td><?php echo $row['label'] ?></td>
       <td><?php echo $row['price'] ?></td>
       <td><?php echo $row['quantity'] ?></td>
-       <td> <?php
-                $cat=$row['id-category'];
-                $ret=$test->aff($cat);
-                foreach ($ret->fetch_all(MYSQLI_ASSOC) as $row) {
-                ?>
-                      <?php echo $row['label']; ?>
-                <?php } ?></td>
-     
-    
-      
+      <td><?php echo $row['category'] ?></td>      
     </tr>
 <?php
    }
